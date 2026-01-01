@@ -1,0 +1,67 @@
+{
+	"Description" : {
+		"Id" : "TraitDef_WS_Weapon_Aim_Bonus_Missle_04",
+		"Name" : "Missle Weapon Aim",
+		"Details" : "PASSIVE: This MechWarrior has a bonus to hit with missle weapons.",
+		"Icon" : "uixSvgIcon_weapon_Missile"
+	},
+	"Type" : "SprintDistance",
+	"ShortDesc" : "Weapon Aim",
+    "DisplayParams" : "NeverShow",
+	"ActivationTime" : "Passive",
+	"EffectData" :
+	[
+        {
+            "effectType" : "StatisticEffect",
+            "nature" : "Buff",
+            "Description" : {
+                "Id" : "Trait-WS-Aim_Missle_Modifier",
+                "Name" : "PILOT BONUS ABILITY: SUPERIOR MISSLE WEAPON AIM",
+                "Details" : "This pilot has unique superior aiming skills with missle weapons.  Difficulty to hit is adjusted by [AMT].",
+                "Icon" : "uixSvgIcon_weapon_Missile"
+            },
+            "durationData" : {
+                "duration" : -1,
+                "ticksOnActivations" : false,
+                "useActivationsOfTarget" : false,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : -1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "Creator",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true,
+                "hideApplicationFloatie" : true
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "AccuracyModifier",
+                "operation" : "Float_Add",
+                "modValue" : "-1.00",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "Weapon",
+                "targetWeaponCategory" : "Missile",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        }
+	]
+}

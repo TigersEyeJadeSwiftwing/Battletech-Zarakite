@@ -1,0 +1,35 @@
+{
+    "AmmoID" : "Ammunition_UKMG",
+    "Capacity" : 30,
+    "Description" : {
+        "Cost" : 5000,
+        "Rarity" : 0,
+        "Purchasable" : true,
+        "Manufacturer" : "Generic",
+        "Model" : "Ultra-Kinetic",
+        "UIName" : "UK MG Ammo 01x",
+        "Id" : "AmmunitionBox_UKMG_01x",
+        "Name" : "UK MG Ammo 01x",
+        "Details" : "",
+        "Icon" : "uixSvgIcon_ammoBox_Support"
+    },
+    "BonusValueA" : "30 Shots",
+    "BonusValueB" : "10 Attacks",
+    "ComponentType" : "AmmunitionBox",
+    "ComponentSubType" : "Ammunition",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 0.0625,
+    "CanExplode" : false,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    },
+    "statusEffects" : []
+}
